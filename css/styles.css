@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
-
-/* font-family: 'Poppins', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
  /* box sizing */
 html {
@@ -29,11 +28,12 @@ html {
 }
 
 .header {
-    padding-bottom: 3.5rem;
+    padding-bottom: 3.5rem;    
 }
 
 .header__title {
     font-size: 1.6rem;
+    text-align: center;
 }
 
 .header__title--light {
@@ -54,12 +54,14 @@ html {
 .card {
     display: flex;
     gap: 1rem;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .card__image {
     display: flex;
     justify-content: flex-end;
+    padding-top: 2rem;
     /* padding-right: 2rem; */
     /* padding-bottom: 1.8rem; */
     
@@ -87,5 +89,22 @@ html {
 
 .supervisor {
     border-top: .3rem solid hsl(180, 62%, 55%);
+    flex-grow: 0;
 }
 
+.team-builder {
+    border-top: .3rem solid hsl(0, 78%, 62%);
+    flex-grow: 0;
+}
+
+.karma {
+    border-top: .3rem solid hsl(34, 97%, 64%);
+}
+
+.calculator {
+    border-top: .3rem solid hsl(212, 86%, 64%);
+}
+
+.attribution {
+    font-family: 'Montserrat', sans-serif;
+}
