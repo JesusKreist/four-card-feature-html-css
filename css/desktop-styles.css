@@ -1,0 +1,37 @@
+@media screen and (min-width: 900px) {
+    .header__tagline {
+        max-width: 34rem;
+        text-align: center;
+        margin: auto;
+        padding: 0;
+    }
+    
+    .card {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(auto, 22rem));
+        grid-template-rows: repeat(4, 1fr);
+        gap: 1.5rem;
+        grid-template-areas: "..... build ....."
+                             "visor build calcu"
+                             "visor karma calcu"
+                             "..... karma .....";
+        justify-content: center;
+    }
+
+    .supervisor {
+        grid-area: visor;
+        
+    }
+
+    .team-builder {
+        grid-area: build;
+    }
+
+    .karma {
+        grid-area: karma;
+    }
+
+    .calculator {
+        grid-area: calcu;
+    }
+}
