@@ -12,14 +12,14 @@
         grid-template-rows: repeat(4, 1fr);
         gap: 1.5rem;
         grid-template-areas: "..... build ....."
-                             "super build calcu"
-                             "super karma calcu"
+                             "visor build calcu"
+                             "visor karma calcu"
                              "..... karma .....";
         justify-content: center;
     }
 
     .supervisor {
-        grid-area: super;
+        grid-area: visor;
         
     }
 
