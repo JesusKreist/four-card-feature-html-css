@@ -55,9 +55,8 @@ html {
 }
 
 .card {
-    display: flex;
+    display: grid;
     gap: 1rem;
-    flex-direction: column;
 }
 
 .card__items {
